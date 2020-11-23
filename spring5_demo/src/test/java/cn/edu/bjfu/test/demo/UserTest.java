@@ -1,6 +1,6 @@
 package cn.edu.bjfu.test.demo;
 
-import cn.edu.bjfu.demo.User;
+import cn.edu.bjfu.pojo.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -12,12 +12,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class UserTest {
 
     @Test
-    public void add() {
-
-        //1.加载配置文件
+    public void userTest(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         User user = context.getBean("user", User.class);
         System.out.println(user);
-        user.add();
     }
 }
