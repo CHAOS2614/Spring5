@@ -36,12 +36,12 @@ public class BookService {
     @Autowired
     public BookService(BookDao bookDao) {
         this.bookDao = bookDao;
-        System.out.println("bookService--->构造器!--->给" + bookDao + "赋值!");
+        System.out.println("bookService--->\t构造器!--->给" + bookDao + "赋值!");
     }
 
     @PostConstruct
     public void init() {
-        System.out.println("BookService--->初始化方法!@PostConstruct");
+        System.out.println("BookService--->\t初始化方法!@PostConstruct");
     }
 
     @Override

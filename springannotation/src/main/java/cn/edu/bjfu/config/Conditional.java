@@ -22,7 +22,7 @@ public class Conditional {
     @org.springframework.context.annotation.Conditional(PersonCondition.class)
     @Bean("tom")
     public Person tom(){
-        System.out.println("tom---> Bean创建了!!!!!!");
+        System.out.println("tom--->\tBean创建了!!!!!!");
         return new Person("tom",12);
     }
 
