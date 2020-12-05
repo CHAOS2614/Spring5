@@ -4,8 +4,6 @@ import cn.edu.bjfu.config.MainConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Date;
-
 /**
  * @author Chao Huaiyu
  * @date 2020/12/3

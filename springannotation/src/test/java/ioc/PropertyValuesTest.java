@@ -2,10 +2,7 @@ package ioc;
 
 import cn.edu.bjfu.config.PropertyValues;
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Chao Huaiyu
@@ -13,7 +10,7 @@ import static org.junit.Assert.*;
  */
 public class PropertyValuesTest {
 
-    AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(PropertyValues.class);
+    private AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(PropertyValues.class);
 
     @Test
     public void person() {

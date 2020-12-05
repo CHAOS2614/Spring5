@@ -2,6 +2,7 @@ package ioc;
 
 import cn.edu.bjfu.config.Autowired;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -10,14 +11,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class AutowiredTest {
 
-    private AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Autowired.class);
+    private ApplicationContext context = new AnnotationConfigApplicationContext(Autowired.class);
     
     @Test
     public void autowired(){
         Object bookDao = context.getBean("bookDao");
         Object bookService= context.getBean("bookService");
+        Object bookController = context.getBean("bookController");
+        System.out.println(bookController);
         System.out.println(bookService);
         System.out.println(bookDao);
     }
-
 }
