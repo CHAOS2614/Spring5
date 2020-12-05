@@ -9,9 +9,14 @@ import org.springframework.context.annotation.Bean;
  */
 public class Person {
 
-    @Value("anna")
+    /**
+     * /@Value("anna")
+     */
     private String name;
-    @Value("17")
+    /**
+     * /@Value("17")
+     */
+
     private Integer age;
 
     public Person(String name, Integer age) {
